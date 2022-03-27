@@ -1,0 +1,43 @@
+
+
+/* Filter
+    blur (px)
+    brightness (angka / %)
+    contrast (angka / %)
+    saturate (angka / %)
+    grayscale (angka / %)        
+    sepia (angka / %)        
+    hue-rotate (adeg)        
+    invert (angka / %)        
+    opacity (angka / %)        
+    drop-shadow (sama seperti box-shadow) 
+*/
+
+body {
+    text-align: center;
+}
+
+img {
+
+    /* filter: blur(20px); */
+    
+    filter: brightness(2);
+    
+    /* filter: contrast(4); */
+    
+    /* filter: saturate(1); */
+    
+    /* filter: grayscale(0.8); */
+    
+    /* filter: sepia(12); */
+    
+    /* filter: hue-rotate(200deg); */
+    
+    /* filter: invert(1); */
+    
+    /* filter: opacity(0.9); */
+    
+    /* filter: drop-shadow(10px 10px 2px rgb(31, 100, 83)); */
+
+
+}

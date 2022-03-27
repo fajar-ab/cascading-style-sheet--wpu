@@ -1,0 +1,103 @@
+/* 
+    animation: [name] [duration] [timing-function] [delay] [interation-count] [direction] [fill-mode] [palay-state]
+
+    * animation-iteration-count
+        akan memgulagi animasi yang berjalan    
+
+        <angka>     berapa kali diulagi
+        infinite    diulang terus menerus
+        1           (default)
+
+    * animation-direction
+
+        normal              animasinya berjalan dari awal asampai akhir (default)
+        reverse             berjalan dari akhir ke awal
+        alternate           berganti / bolak balik
+        alternate-reverse   berganti tapi mulai dari akhir
+        
+    * animation-fill-mode
+        menentukan ahkrir dari posisi
+        
+        none        (default)
+        forwards    berhenti ke keadaan akhir
+        backwards   berhenti ke keadaan awal
+        both        
+    
+    * palay-state
+        mengatur animasi berjalan
+
+        runing      berjalan
+        pause       berhenti 
+    
+*/
+
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+
+    /* * nama animasi */
+    animation-name: animasiKotak;
+
+    /* * durasi animasi */
+    animation-duration: 2s;
+
+    /* * fungsi berjalan */
+    animation-timing-function: ease;
+
+    /* * delay animasi */
+    animation-delay: 0s;
+
+    /* * perulangan animasi */
+    animation-iteration-count: 3;
+
+    /* * berjalan animasi */
+    /* animation-direction: normal; */
+    animation-direction: alternate;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+
+    /* * akrir posisi animasi */
+    /* animation-fill-mode: none; */
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    /* animation-fill-mode: both; */
+
+    /* * jalankan animasi */
+    /* animation-play-state: paused; */
+    animation-play-state: running;
+
+
+    /* * sorthand */
+    animation: animasiKotak 1s ease 0s infinite alternate forwards running;
+
+}
+
+/* .kotak:hover {
+    animation: animasiKotak 1s ease;
+} */
+
+@keyframes animasiKotak {
+    
+    0% {
+        width: 200px;
+    }
+    
+    50% {
+        width: 400px;
+        height: 200px;
+    }
+
+    100% {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* from {
+        width: 200px;
+    }
+
+    to {
+        width: 400px;
+    } */
+}

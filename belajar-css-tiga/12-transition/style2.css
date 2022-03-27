@@ -1,0 +1,47 @@
+/*     
+    transition: [property] <durasi> [fungsi] [delay]
+    
+    fungsi / timing function
+        - ease default
+        - ease-in
+        - ease-out
+        - ease-in-out
+        - linear
+        - cubic-bezier(w,x,y,z)
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    border: 1px dotted slateblue;
+    margin: 10px auto;
+}
+
+.kotak {
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+
+}
+
+.kotak1 { transition: all 3s ease }
+.kotak2 { transition: all 3s ease-in }
+.kotak3 { transition: all 3s ease-out }
+.kotak4 { transition: all 3s ease-in-out }
+.kotak5 { transition: all 3s linear }
+.kotak6 { transition: all 3s cubic-bezier(0, -1.03, 0.99, 1.89) }
+
+.container:hover .kotak {
+    transform: rotate(180deg);
+    margin-left: 420px;
+    background-color: purple;
+}

@@ -1,0 +1,33 @@
+/*     
+    transition: [property] <durasi> [fungsi] [delay]
+
+    property apa saja yang harus berubah
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    border: 1px dotted slateblue;
+    margin: 10px auto;
+}
+
+.kotak {
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+    
+    transition: all 1s;
+    /* transition: margin-left 1s; */
+    /* transition: transform 1s; */
+    /* transition: background-color 1s; */
+}
+
+.container:hover .kotak {
+    transform: rotate(360deg);
+    margin-left: 420px;
+    background-color: purple;
+}
