@@ -1,0 +1,57 @@
+/* div {
+    display: inline-block;
+} */
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    
+    /* * mengatur margin: secara vertikal */
+    /* margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px; */
+    
+    /* * mengatur margin: secara horizontal */
+    /* margin-right: 30px; */
+    
+    /* negatif margin */
+    margin-bottom: 20px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    
+    /* * mengatur margin: secara vertikal */
+    /* ! overlapping: margin tidak menambahkan untuk vertikal */
+    /* margin-top: 50px;  */
+    
+
+    /* * mengatur margin: secara horizontal */
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+
+    /* * mengatur margin: auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empat {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    /* margin: 20px; */
+    /* margin: 20px 20px; */
+    margin: 20px auto;
+    /* margin: 20px auto 10px; */
+    /* margin: 100px 20px 100px 100px; */
+}

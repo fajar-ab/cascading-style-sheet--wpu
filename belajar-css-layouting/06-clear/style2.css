@@ -1,0 +1,15 @@
+.container {
+    width: 600px;
+    margin: auto;
+    border: 2px dotted salmon;
+    padding: 5px;
+    /* overflow: auto; */
+}
+
+img {
+    float: left;
+}
+
+.clear {
+    clear: left;
+}
