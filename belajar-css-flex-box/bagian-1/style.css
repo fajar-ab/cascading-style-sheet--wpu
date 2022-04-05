@@ -1,0 +1,115 @@
+/* 
+
+ *  [1] membuat sebuah element parent menjadi flax box
+    dispaly: flex | inline-flax
+ *  [2] flex-direction mengatur arah dari element didalamnya
+    flex-direction: row | row-reverse | column | column-reverse 
+
+ *  [3] flex-wrap untuk mengatur jika element suda tidak muat dari barisnya
+    flex-wrap: norap | wrap | wrap-reverse
+
+ *  [4] justify-content mengatur rata dari element
+    justify-content:
+        - flex-start
+        - flex-end
+        - center
+        - space-between
+        - space-around
+        - space-evenly
+
+ *  [5] align-item mengatur kesejajaran antar item
+    align-item:
+        - flex-start
+        - flex-end
+        - center
+        - stretch
+        - baseline
+ 
+ *  [6] align-content mengatur conten lebih dari 1 baris 
+    align-content:
+        - flex-start
+        - flex-end
+        - center
+        - stretch
+        - space-between
+        - space-around
+
+ *  [7] order mengatur urutan dari item 
+    order: 1 / angka default 0 untuk semua item
+
+ *  [8] flex-grow / flex mengatur ukuran dari item 
+    flex-grow: 2 (artinya item akan dua kali lebih besar)
+
+ *  [9] align-self mengatur haya satu posisi dari item 
+    align-self: flext-start | flext-end | strech
+
+*/
+
+.container {
+    width: 600px;
+    height: 440px;
+    border: 2px dotted blueviolet;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    
+
+/* [1] */
+    display: flex;
+
+/* [2] */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+/* [3] */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+/* [4] */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+/* [5] */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+
+/* [6] */
+    
+
+}
+
+.container div {
+    width: 120px;
+    height: 120px;
+    background-color: salmon;
+    margin: 2px;
+
+/* [7] */
+    /* flex-grow: 1; */
+}
+
+.container div.lima {
+    display: none;
+}
+
+/* [7] */
+/* .satu { order: 4 }
+.dua { order: 2 }
+.tiga { order: 1 }
+.empat { order: 3 } */
+ 
+/* [6] */
+/* .container div.dua { 
+    flex-grow: 2; 
+    align-self: center;
+} */
