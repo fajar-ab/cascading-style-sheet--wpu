@@ -1,0 +1,83 @@
+/* 
+    * grid-column-start & grid-column-end, 
+    * grid-row-start & grid-row-end
+
+    menentukan tempat dari grid item dengan menacu
+    pada nomor atau nama grid line yang spesifik
+
+    .item {
+        grid-column-start: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        grid-column-end: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        grid-row-start: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+        grid-row-end: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+    }
+
+    <nomor> | <nama>    : mengacu pada nomor atau nama yang kita beri pada grid lne
+    span <nomor>        : item akan memanjang / melebar sampai sejumlah nomor
+    span <nama>         : item akan memanjang / melebar sampai ke nama grid line tertentu
+
+    * grid-column & grid-row
+
+    sorthand untuk start dan end pada grid-column & grid-row
+
+    .item {
+        grid-colum: <start-line> / end-line | <start-line> / span <value>
+        grid-row: <start-line> / end-line | <start-line> / span <value>
+    }
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 100px); */
+
+    grid-template-columns: [satu] 1fr [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [b1] 100px [b2] 100px [b3] 100px [b4];
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-item {
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: -3;
+    grid-row-end: -1; */
+    
+    /* grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2; */
+
+    /* grid-column-start: satu;
+    grid-column-end: empat;
+    grid-row-start: b2;
+    grid-row-end: b3; */
+    
+    /* grid-column-start: -1;
+    grid-column-end: -2;
+    grid-row-start: -1;
+    grid-row-end: -4; */
+
+
+
+    grid-column: -1 / -2;
+    grid-row: -1 / -4;
+
+    grid-column: 1 / span 3;
+    grid-row: 2 / 3;
+
+    background-color: aqua;
+}
+

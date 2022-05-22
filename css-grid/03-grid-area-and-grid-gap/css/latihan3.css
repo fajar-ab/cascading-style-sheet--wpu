@@ -1,0 +1,54 @@
+/* 
+    * grid-gap
+    mendefinisan ukuran grid-line / jarak antara baria atau kolom
+
+    * grid
+    sorthand untuk mendefinisikan property dalam satu deklarasi
+    grid-template-rows,
+    grid-template-columns,
+    grid-template-areas,
+    gird-template-auto-rows,
+    gird-template-auto-columns,
+    gird-template-auto-flow,
+    
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.container {
+
+    width: 80%;
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 10px; */
+    /* grid-gap: 10px; */
+
+    column-gap: 10px;
+    row-gap: 10px;
+
+    /* sorthand */
+    gap: 10px;
+}
+
+.item {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.item:nth-child(odd) {
+    background-color: salmon;
+}

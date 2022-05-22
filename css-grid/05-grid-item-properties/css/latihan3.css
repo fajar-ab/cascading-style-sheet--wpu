@@ -1,0 +1,62 @@
+/* 
+    * justify-self
+    mengatur posisi item pada sebuah cell terhadap sumbu horizontal
+
+    .item {
+        justify-self: start | end | center | stretch
+    }
+
+    * align-self
+    mengatur posisi item pada sebuah cell terhadap sumbu vertikal
+
+    .item {
+        align-self: start | end | center | stretch
+    }
+    
+    * place-self
+    sorhand
+    
+    .item {
+        place-self: <aling-self> <justify-self>;
+    }
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.my-area {
+
+    padding: 10px 20px;
+
+    /* justify-self: start; */
+    /* justify-self: end; */
+    /* justify-self: center; */
+    /* justify-self: stretch; */
+
+    /* align-self: start; */
+    /* align-self: end; */
+    /* align-self: center; */
+    /* align-self: stretch; */
+
+    place-self: center stretch;
+    
+    background-color: salmon;
+}
